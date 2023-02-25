@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string[] GetArray(string message) 
+{
+    string words = "";
+    
+    Console.WriteLine(message);
+    words = Console.ReadLine();
+    
+    string[] wordsArray = words.Split(" ");
+
+    return wordsArray;
+}
